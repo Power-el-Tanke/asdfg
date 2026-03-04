@@ -9,6 +9,8 @@
                  [com.github.seancorfield/next.jdbc "1.3.1093"]
                  [org.postgresql/postgresql "42.7.10"]
                  [hikari-cp "4.0.0"]
-                 [org.clojure/data.json "2.5.2"]]
+                 [org.clojure/data.json "2.5.2"]
+                 [metosin/reitit "0.10.0"]
+                 [metosin/reitit-ring "0.10.0"]]
   :main shelter.core
   :repl-options {:init-ns shelter.core})
