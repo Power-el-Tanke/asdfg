@@ -1,6 +1,10 @@
 (ns shelter.core
     (:use [shelter.server :only [start-server]]))
 
-(defn -main []
-    (start-server 1234)
-    (println "server started at port: " 1234))
+(def env-map
+    (-> (System/getenv)
+        (select-keys ["SERVER_PORT"])))
+
+(defn -main [] (let [port (Integer/parseInt (env-map "SERVER_PORT"))]
+        (start-server port)
+        (println "server started at port: " port)))
