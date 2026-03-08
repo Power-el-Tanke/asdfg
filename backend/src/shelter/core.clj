@@ -3,7 +3,9 @@
 
 (def env-map
     (-> (System/getenv)
-        (select-keys ["SERVER_PORT"])))
+        (select-keys ["SERVER_PORT" 
+                      "DATABASE_PORT" 
+                      "DATABASE_HOST"])))
 
 (defn -main [] (let [port (Integer/parseInt (env-map "SERVER_PORT"))]
         (start-server port)
