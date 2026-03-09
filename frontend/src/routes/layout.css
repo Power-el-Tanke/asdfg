@@ -1,1 +1,17 @@
-@import 'tailwindcss';
+ :root {
+    --primary: #f18f01;
+    --primary-dark: #d67d01;
+    --text: #2e4057;
+    --background: #f9f7f3;
+    --light-gray: #e8e5de;
+    --white: #ffffff;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-border {
+    margin: -1.5em 1em 1em 1em;
+}
+
+.rounded-border {
+    border-radius: 8px 8px 0 0;
+}

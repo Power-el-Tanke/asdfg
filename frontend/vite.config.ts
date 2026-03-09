@@ -1,10 +1,15 @@
-import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vitest/config';
+import { fileURLToPath, URL } from 'node:url';
 import { playwright } from '@vitest/browser-playwright';
 import { sveltekit } from '@sveltejs/kit/vite';
 
 export default defineConfig({
-	plugins: [tailwindcss(), sveltekit()],
+	plugins: [sveltekit()],
+	resolve: {
+	    alias: {
+	        '$assets': fileURLToPath(new URL('.src/lib/assets/', import.meta.url))
+	    }
+	},
 	test: {
 		expect: { requireAssertions: true },
 		projects: [
