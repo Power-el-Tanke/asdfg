@@ -4,6 +4,7 @@
   :license {:name "GPL-3.0"
             :url "https://www.gnu.org/licenses/gpl-3.0.html"}
   :dependencies [[org.clojure/clojure "1.11.1"]
+                 [org.clojure/data.json "2.5.2"]
                  [ring/ring-core "1.15.3"]
                  [ring/ring-jetty-adapter "1.15.3"]
                  [com.github.seancorfield/next.jdbc "1.3.1093"]
