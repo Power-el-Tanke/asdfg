@@ -1,7 +1,8 @@
-<!-- RefugioPatitas.svelte (versión con cards descriptivas) -->
+⁶<!-- RefugioPatitas.svelte (versión con cards descriptivas) -->
 <script>
   import Hero from "$lib/components/ui/Hero.svelte"
   import DogRescuedImg  from '$lib/assets/landing/pet_rescued.jpg'
+  im
 </script>
 
 <header>
